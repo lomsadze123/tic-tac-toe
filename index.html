@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+
+    <div id="starter">
+        <div class="images">
+            <img src="assets/xval.svg" alt="X icons">
+            <img src="assets/oval.svg" alt="O icons">
+        </div>
+        <div class="starter-main">
+            <div class="choice">
+                <h2 class="h2-title">PICK PLAYER 1'S MARK</h2>
+                <div class="x-o">
+                    <div class="wrap" value="X">
+                            <svg value="X" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path value="X" fill-rule="evenodd" clip-rule="evenodd" d="M27.681 1.63437C26.5094 0.462798 24.6099 0.4628 23.4383 1.63437L16 9.07271L8.56166 1.63437C7.39009 0.462798 5.49059 0.4628 4.31902
+                            1.63437L1.63437 4.31902C0.462799 5.49059 0.462801 7.39009 1.63437 8.56166L9.07271 16L1.63437 23.4383C0.462798 24.6099 0.4628 26.5094 1.63437 27.681L4.31902 30.3656C5.49059 31.5372
+                             7.39009 31.5372 8.56166 30.3656L16 22.9273L23.4383 30.3656C24.6099 31.5372 26.5094 31.5372 27.681 30.3656L30.3656 27.681C31.5372 26.5094 31.5372 24.6099 30.3656 23.4383L22.9273 16L30.3656
+                              8.56166C31.5372 7.39009 31.5372 5.49059 30.3656 4.31902L27.681 1.63437Z" fill="#A8BFC9"/>
+                            </svg>
+                    </div>
+                        <div class="wrap two" value="O">
+                            <svg value="O" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path value="O" fill-rule="evenodd" clip-rule="evenodd" d="M31.9704 15.8706C31.9704 7.10551 24.8649 0 16.0998 0C7.33476 0 0.229248 7.10551 0.229248 15.8706C0.229248 24.6357 7.33476 31.7412 16.0998
+                                 31.7412C24.8649 31.7412 31.9704 24.6357 31.9704 15.8706ZM9.63405 15.8706C9.63405 12.2996 12.5289 9.4048 16.0998 9.4048C19.6708 9.4048 22.5656 12.2996 22.5656 15.8706C22.5656 19.4416
+                                 19.6708 22.3364 16.0998 22.3364C12.5289 22.3364 9.63405 19.4416 9.63405 15.8706Z" fill="#1A2A33"/>
+                                </svg>
+                        </div>
+                </div>
+                <h2 class="h2-title-opacity">REMEMBER : X GOES FIRST</h2>
+            </div>
+        </div>
+        <button id="start">START</button>
+    </div>
+
+
+    <div id="game">
+            <div class="turn">
+                <div class="images">
+                    <img src="assets/xval.svg" alt="X icons">
+                    <img src="assets/oval.svg" alt="O icons">
+                </div>
+                <div class="replace">
+                    <img id="switcher" src="assets/xval.svg" alt="icons"> <h2>TURN</h2>
+                </div>
+                <img id="res" src="assets/restart.svg" alt="restart button">
+            </div>
+        <div id="main">
+            <div class="box"><h1 class="heading"></h1></div>
+            <div class="box"><h1 class="heading"></h1></div>
+            <div class="box"><h1 class="heading"></h1></div>
+            <div class="box"><h1 class="heading"></h1></div>
+            <div class="box"><h1 class="heading"></h1></div>
+            <div class="box"><h1 class="heading"></h1></div>
+            <div class="box"><h1 class="heading"></h1></div>
+            <div class="box"><h1 class="heading"></h1></div>
+            <div class="box"><h1 class="heading"></h1></div>
+            <div class="count first"><h2>X (ply)</h2><h2 id="countX">0</h2></div>
+            <div class="count second"><h2>TIES</h2><h2 id="countT">0</h2></div>
+            <div class="count third"><h2>O (ply)</h2><h2 id="countY">0</h2></div>
+            <button id="btn">restart</button>
+        </div>
+        <div id="overlay">
+            <div class="color">
+                <div class="flex"> <span id="who"></span> <span id="champion"> </span> </div>
+                <button id="quit">QUIT</button>
+                <button id="next">NEXT ROUND</button>
+                <button id="cancel">NO, CANCEL</button>
+                <button id="restart">YES, RESTART</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

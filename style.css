@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A2A33;
+    font-family: 'Outfit', sans-serif;
+}
+
+button {
+    font-family: 'Outfit', sans-serif;
+    border: 0;
+    font-size: 2rem;
+    line-height: 2.016rem;
+    color: #1A2A33;
+    border-radius: 1.5rem;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 32.8rem;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 1rem;
+    background-color: #1F3641;
+    box-shadow: inset 0px -8px 0px #10212A;
+}
+
+.heading {
+    font-weight: 800;
+    font-size: 6rem;
+    color: #31c3bd;
+    transition: .5s;
+}
+
+#champion {
+    font-size: 2.5rem;
+}
+
+#who {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2.4rem;
+}
+
+#btn {
+    margin: 0 auto;
+    background-color: Silver;
+    box-shadow: inset 0px -4px 0px #6B8997;
+    padding: 1rem;
+    display: none;
+}
+
+.images, .h2-title, .h2-title-opacity {
+    text-align: center;
+}
+
+.images img {
+    width: 3.15rem;
+    height: 3.15rem;
+}
+
+.images img:first-of-type {
+    margin-right: .774rem;
+}
+
+.starter-main {
+    padding: 2.4rem 2.4rem 3rem 2.4rem;
+    background-color: #1F3641;
+    box-shadow: inset 0px -8px 0px #10212A;
+    border-radius: 1.5rem;
+    color: #A8BFC9;
+    margin: 3.2rem 0;
+}
+
+.h2-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.016rem;
+    letter-spacing: .1rem;
+}
+
+.h2-title-opacity {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.764rem;
+    letter-spacing: .088rem;
+    opacity: .5;
+}
+
+.x-o {
+    display: flex;
+    padding: .9rem .8rem;
+    background-color: #1A2A33;
+    border-radius: 1rem;
+    margin: 2.4rem 0 1.7rem 0;
+    font-size: 3rem;
+}
+
+.wrap {
+    text-align: center;
+    padding: 1.1rem 4.5rem .4rem 5.5rem;
+    border-radius: 1rem;
+}
+
+.two {
+    background-color: #A8BFC9;
+}
+
+#start {
+    width: 32.7rem;
+    display: block;
+    background-color: #F2B137;
+    letter-spacing: .8rem;
+    margin: 0 auto;
+    box-shadow: inset 0px -8px 0px #CC8B13;
+    padding: 1.4rem 0 2.2rem 0;
+    font-weight: 700;
+}
+
+.turn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6.4rem;
+}
+
+.replace {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    background-color: #1F3641;
+    border-radius: .5rem;
+    padding: .9rem 1.5rem 1.3rem 1.5rem;
+    box-shadow: inset 0px -4px 0px #10212A;
+}
+
+.replace h2 {
+    color: #A8BFC9;
+}
+
+.margin {
+    margin-bottom: 1rem;
+}
+
+.replace img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+#res {
+    padding: 1.231rem;
+    background-color: #A8BFC9;
+    border-radius: .5rem;
+    box-shadow: inset 0px -4px 0px #6B8997;
+}
+
+#game {
+    display: none;
+}
+
+#overlay {
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0,.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+}
+
+.color {
+    background-color: #1F3641;
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0 4.8rem 0;
+}
+
+#quit , #next , #cancel , #restart {
+    padding: 1.5rem 1.6rem 1.7rem 1.7rem;
+    cursor: pointer;
+}
+
+#cancel , #restart {
+    display: none;
+}
+
+#quit , #cancel {
+    background-color: #A8BFC9;
+    box-shadow: inset 0px -4px 0px #6B8997;
+}
+
+#next , #restart {
+    background-color: #F2B137;
+    box-shadow: inset 0px -4px 0px #CC8B13;
+    margin-left: 1.6rem;
+}
+
+.count {
+    width: 9.6rem;
+    color: #1A2A33;
+    border-radius: 1rem;
+    padding: 1.2rem 0;
+    text-align: center;
+}
+
+.count h1:first-child {
+    font-size: 1.4rem;
+}
+
+#countX , #countY , #countT {
+    font-size: 2rem;
+}
+
+.first {
+    background-color: #31C3BD;
+}
+.second {
+    background-color: #A8BFC9;
+}
+.third {
+    background-color: #F2B137;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    #main {
+        width: 46.4rem;
+    }
+    .box {
+        width: 14rem;
+        height: 14rem;
+        border-radius: 1.5rem;
+        cursor: pointer;
+    }
+    .heading {
+        font-size: 8rem;
+    }
+    #champion {
+        font-size: 3rem;
+    }
+    #who {
+        font-size: 5rem;
+    }
+    .flex {
+        gap: 2rem;
+    }
+    #btn {
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+    .wrap {
+        padding: 1.1rem 7.8rem .4rem 8.7rem;
+        cursor: pointer;
+    }
+    #start {
+        width: 46rem;
+        padding: 1.7rem 2.5rem;
+        font-size: 2.4rem;
+        line-height: 2.52rem;
+        letter-spacing: 1rem;
+        cursor: pointer;
+    }
+    .replace img {
+        width: 2rem;
+        height: 2rem;
+    }
+    .replace h2 {
+        font-size: 1.6rem;
+    }
+    .replace {
+        padding: 1.3rem 3rem 1.9rem 3rem;
+        border-radius: 1rem;
+    }
+    #res {
+        padding: 1.6rem;
+        cursor: pointer;
+    }
+    #countX , #countY , #countT {
+        font-size: 2.4rem;
+    }
+    .count {
+        width: 14rem;
+    }
+    .box:hover {
+        background: url(assets/question.webp) no-repeat center center;
+        background-size: 50%;
+    }
+    .disable {
+        pointer-events: none;
+    }
+}
